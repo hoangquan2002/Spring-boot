@@ -1,0 +1,7 @@
+#configure embedded web server
+server:
+  port: 8080
+
+spring:
+  main:
+    web-application-type: servlet
