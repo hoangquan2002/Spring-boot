@@ -64,7 +64,7 @@ public class Customer {
     }
 
     @Override
-    public String pptoString() {
+    public String toString() {
         return "Customer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +

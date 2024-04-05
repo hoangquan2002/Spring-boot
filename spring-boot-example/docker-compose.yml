@@ -1,10 +1,10 @@
 #  This code is a Docker Compose configuration file. It defines a service named "db" that runs a PostgreSQL container.
 services:
   db:
-    container_name: postgres
+    container_name: postgresDB
     image: postgres
     environment:
-      POSTGRES_USER: postgre
+      POSTGRES_USER: quancode
       POSTGRES_PASSWORD: 521800
       PGDATA: /data/postgres
     volumes:
