@@ -4,8 +4,8 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:54d32/customer
-    username: quancode
+    url: jdbc:postgresql://localhost:5432/customer
+    username: postgres
     password: 521800
   jpa:
     hibernate:

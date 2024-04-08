@@ -4,20 +4,20 @@ services:
     container_name: postgresDB
     image: postgres
     environment:
-      POSTGRES_USER: quancode
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 521800
       PGDATA: /data/postgres
     volumes:
       - db:/data/postgres
     ports:
-      - "5332:5432"
+      - "5432:5432"
     networks:
       - db
-    restart: unless-stopped
+    restart: always
 
 networks:
   db:
-    driver: bridge
+    driver: local
 
 volumes:
   db:
